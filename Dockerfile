@@ -18,10 +18,10 @@ RUN python -m venv /py && \
     fi && \
     rm -rf /tmp && \
     adduser \
-    --disabled-password \
-    --no-create-home \
-    django-user
+        --disabled-password \
+        --no-create-home \
+        django-user
 
-ENV path="/py/bin:$PATH"
+ENV PATH="/py/bin:$PATH"
 
 USER django-user
